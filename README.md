@@ -1,5 +1,5 @@
 
-# Neural_Network_Charity_Analysis-
+# Neural Network Charity Analysis
 Beks has come a long way since her first day at that boot camp five years ago—and since earlier this week, when she started learning about neural networks! Now, she is finally ready to put her skills to work to help the foundation predict where to make investments.
 
 With our knowledge of machine learning and neural networks, we'll use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup. Our goal is to build a deep neural network that will yield accurate predicitions of success by ingesting the dataset.
@@ -35,10 +35,16 @@ We consider the following variables irrelevant to our model and have removed the
 
 ## Compiling, Training, and Evaluating the Model
 
-### Amount of neurons, layers, and activation functions did you select for your neural network model, and why?
+### Neural Network Model
 
+We built this deep neural network with the following inputs:
 
-### Were you able to achieve the target model performance?
+- Two hidden layers, the first containing 88 neurons and second with 55 neurons
+- Input dataset with 40 features and 34,299 samples
+- Hidden layer Activation function: relu for classification
+- Output later Activation fuction: sigmoid in order to normalize results between 0 and 1, ideal for binary classification
+
+### Were we able to achieve the target model performance?
 
 According to our accuracy output below, we were not able to achieve the 80% target accuracy in our neural network model. 
 
@@ -47,7 +53,7 @@ According to our accuracy output below, we were not able to achieve the 80% targ
 Loss: 0.5880504250526428, Accuracy: 0.7054227590560913
 ```
 
-### What steps did you take to try and increase model performance?
+### What steps did we take to try and increase model performance?
 
 In order to improve accuracy, we took the following measures to modify the model:
 
@@ -57,7 +63,7 @@ In order to improve accuracy, we took the following measures to modify the model
 - Doubled the amount of neurons in each hidden layer
 - Added a third hidden layer
 - Decreased the number of epochs to 50
-- Changed the activation to tanh
+- Changed the activation to tanh as an alternative form of classifcation
 
 We were able to improve the accuracy of the neural network model, unfortunately still not enouh to hit our 80% target:
 
@@ -66,6 +72,6 @@ We were able to improve the accuracy of the neural network model, unfortunately 
 Loss: 0.565593421459198, Accuracy: 0.7220991253852844
 ```
 
-### Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+### Summary
 
-
+The Neural Network we designed did not deliver the desired accuracy outcome of 80%. Our first iteration delivered 70% accuracy, and second iteration bumped up slightly to 72% accuracy. Given that our target metric contains binary data, we would suggest a supervised Random Forest Classifier model. This alternative model utilizes multiple decision trees to generate a classified output we can evaluate against our existing neural network results.
