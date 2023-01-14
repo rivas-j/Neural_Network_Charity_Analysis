@@ -4,7 +4,7 @@
     <img src=images/neural.png>
 </div>
 
-## <div align="center">Short blurb describing what the tool does</div>
+## <div align="center">Build a Neural Network that can Predict Whether Prospective Charities will be Successful if Funded</div>
 
 <p align="center">
 <a href="#goals">Goals</a> &nbsp;&bull;&nbsp;
@@ -22,9 +22,9 @@ Using machine learning and neural networks, we'll use the features in the provid
 
 Within this dataset are a number of columns that capture metadata about each organization, such as the following:
 
--EIN and Name
--APPLICATION_TYPE
--AFFILIATION
+    - EIN and Name
+    - APPLICATION_TYPE
+    - AFFILIATION
 
 - [Charity Data:](data/charity_data.csv) CSV containing data for 34,299 organizations that have received funding from Alphabet Soup over the years
 
